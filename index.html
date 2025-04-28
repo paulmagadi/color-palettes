@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+
+        <div class="color-palettes-container" id="paletteContainer"></div>
+
+        <div id="cssModal" class="css-modal">
+            <div class="css-modal-content">
+                <h3>CSS Code</h3>
+                <pre id="cssCode" class="css-code"></pre>
+                <div class="modal-actions">
+                    <button id="copyCssBtn">Copy to Clipboard</button>
+                    <button id="closeCssModal">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="demoModal" class="demo-modal">
+            <div class="demo-modal-content">
+                <span class="close-demo-modal">&times;</span>
+                <h3>Palette Demo</h3>
+                <div id="demoTemplate" class="demo-template">
+                    <div class="demo-sidebar" id="demoSidebar">
+                        <!-- Colors will be inserted here -->
+                    </div>
+                    <div class="demo-main">
+                        <div id="demoNavbar" class="demo-navbar">
+                            <!-- Navbar with first color -->
+                        </div>
+                        <div id="demoCard1" class="demo-card">
+                            <h4>Sample Card</h4>
+                            <p>This demonstrates how your colors work together.</p>
+                            <button class="demo-button">Primary Action</button>
+                            <button class="demo-button">Secondary Action</button>
+                        </div>
+                        <div id="demoCard2" class="demo-card">
+                            <h4>Another Card</h4>
+                            <p>Notice how the text colors automatically adjust for readability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</body>
+</html>
