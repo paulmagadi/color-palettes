@@ -227,10 +227,10 @@ function renderPalettes(palettes) {
                     `;
                 }).join('')}
                 <hr>
-                <h5 style="color: black; text-align: center;">${palette.name}</h5>
+                <h5 style="color: black; text-align: center; margin: 10px 0">${palette.name}</h5>
                 <div class="palette-actions">
-                    <button class="copy-css-btn" data-id="${palette.id}">CSS</button>
-                    <button class="demo-btn" data-id="${palette.id}">Demo</button>
+                    <button class="copy-css-btn" data-id="${palette.id}"  title ='Copy code'>CSS</button>
+                    <button class="demo-btn" data-id="${palette.id}" title ='View demo'>Demo</button>
                 </div>
             </div>
         `;
